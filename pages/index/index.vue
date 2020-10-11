@@ -25,7 +25,7 @@
 		<view class="tit">
 			推荐商品
 		</view>
-<goods-list :goods="goods"></goods-list>
+<goods-list @goodsItemClick="goGoodsDetail" :goods="goods"></goods-list>
 		
 	</view>	
 	</view>
@@ -98,8 +98,14 @@
 				uni.navigateTo({
 					url
 				})
+			},
+			//跳转导航
+			goGoodsDetail(id){
+				uni.navigateTo({
+					url: '../goods-detail/goods-detail?id='+id,
+					
+				});
 			}
-			
 		}
 	}
 </script>

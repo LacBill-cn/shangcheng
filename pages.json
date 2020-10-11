@@ -40,6 +40,10 @@
             "style" : {}
         }
         
+        ,{
+            "path" : "pages/goods-detail/goods-detail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
